@@ -1,72 +1,71 @@
-/* Section title region: 
-Each section should have a section title region that is always positioned at the top right corner of the section 
-no matter the view (desktop, tablet or mobile). Copy the titles from the mockup illustration 
-(i.e., Chicken, Beef, Sushi) or come up with your own. 
-(Hint: use relative and absolute positioning and offsets as discussed in Lecture 22.)
-
-Spacing: Pay attention to the spacing shown in the mockup illustrations. 
-Note the spacing between sections (both horizontal and vertical). 
-Note the horizontal spacing between the edges of the section and the edges of the browser window. 
-Also, note the spacing between the dummy text in each section and the edges of the section. 
-Lastly, make sure the dummy text is "pushed down" enough so it doesn't overlap the section title region. 
-(Hint: use margins and padding and use border-box as your box-sizing as discussed in Lecture 19.)
-
-Borders and Colors: Each section should have a background color set to some color (of your choosing). 
-Set the background color of each section title region to some unique color (of your choosing). 
-Make sure that the background color still allows the user to view the text in the section and section title regions. 
-Depending on the color you choose, you may want to change the color of the text so it can be easy to read. 
-Set a black border on both the section and section title region that is 1px thick. 
-Warning: While not specifying borders and colors according to the requirements does not hurt your grade so much, 
-not doing so will make it much harder for your classmates to peer grade the rest of your assignment, 
-possibly resulting in a much lower grade.
-
-(OPTIONAL) You will NOT be graded on this, but you may want to explicitly set a font-family for the text in your page, 
-so you are not stuck with the default browser font family. 
-Also, set the font size of the heading and section title to be 75% larger and 25% larger (respectively) 
-than the font size of the dummy text. */
-
-
 /********** Base styles **********/
 * {
     box-sizing: border-box;
   }
-  h1 {
-    margin-bottom: 15px;
-    color: green;
-    font-size: 36px;
-    text-align: center;
+
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+  }
+ 
+  div#container {
+    position: relative;
+    margin-bottom: 0px;
   }
   
-  p {
-    border: 1px solid black;
-    background-color: #A52A2A;
-    width: 90%;
-    height: 150px;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: Helvetica;
-    color: white;
-    font-size: 130%;
-    color:black
+  h1 {
+    margin-bottom: 10px;
+    color: black;
+    font-size: 175%;
+    font-weight: normal;
+    text-align: center;
   }
+
   p {
     border: 1px solid black;
-    margin-bottom: 15px;
+    background-color: #c9c9c9;
+    padding-top: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color:black;
+    font-size: 100%;
   }
   #p1 {
-    background-color: #A52A2A;
-    width: 300px;
-    height: 300px;
+    background-color: #e4d79c;
+    position: absolute;
+    width: 150px;
+    top: 0;
+    right: 0;
+    padding: 3px;
+    margin-top: 16px;
+    font-size: 125%;
+    text-align: center;
   }
   #p2 {
-    background-color: #DEB887;
-    width: 50px;
-    height: 50px;
+    background-color: #e2cacd;
+    position: absolute;
+    width: 150px;
+    top: 0;
+    right: 0;
+    padding: 3px;
+    margin-top: 16px;
+    font-size: 125%;
+    text-align: center;
   }
   #p3 {
-    background-color: #DEB887;
-    width: 50px;
-    height: 50px;
+    background-color: #95b2dd;
+    position: absolute;
+    width: 150px;
+    top: 0;
+    right: 0;
+    padding: 3px;
+    margin-top: 16px;    
+    font-size: 125%;
+    text-align: center;
   }
 
   /* Simple Responsive Framework. */
@@ -78,7 +77,7 @@ than the font size of the dummy text. */
   @media (min-width: 992px) {
     .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
       float: left;
-      border: 1px solid green;
+
     }
     .col-lg-1 {
       width: 8.33%;
@@ -122,7 +121,7 @@ than the font size of the dummy text. */
   @media (min-width: 768px) and (max-width: 991px) {
     .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
       float: left;
-      border: 1px solid green;
+
     }
     .col-md-1 {
       width: 8.33%;
@@ -167,7 +166,7 @@ than the font size of the dummy text. */
   @media (max-width: 767px) {
     .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
       float: left;
-      border: 1px solid green;
+
     }
     .col-sm-1 {
       width: 8.33%;
