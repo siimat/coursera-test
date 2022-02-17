@@ -1,0 +1,108 @@
+body {
+    font-size: 16px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /** HEADER **/
+  #header-nav {
+    background-color: #b8b8b8;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 10px;
+  }
+  .container {
+    margin: 0px;
+    width: 100%;
+    border: 1px;
+  }
+  .navbar-brand {
+    padding-top: 15px;
+    margin-left: 5px;
+  }
+  .navbar-brand h1 { /* Page name */
+    color: #000000;
+    font-size: 1.25em;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+  }
+  .navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+  }
+  div #collapsable-nav {
+      background-color: white;
+  }
+  #nav-list {
+    background-color: #ffffff;
+    margin-top: 0px;
+  }
+  #nav-list li {
+    border: 1px solid #000000;
+  }
+  #nav-list a {
+    color: #000000;
+    text-align: center;
+  }
+  #nav-list a:hover {
+    background-color: #e7e7e7;
+  }
+  .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #000000;
+  }
+  .navbar-header button.navbar-toggle {
+    clear: inline-end;
+    margin-top: 10px;
+  }
+  div #collapsable-nav {
+    border-top-width: 0px;
+  }
+  /* END HEADER */
+
+  /* HOME PAGE */
+
+#page_heading {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+#page-textbox {
+    background-color: #b8b8b8;
+    margin: 5px 5px 15px 5px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px; 
+    padding-bottom: 10px;
+
+}
+#chick {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+  /* END HOME PAGE */
+
+  /********** Large devices only **********/
+  @media (min-width: 1200px) {
+    nav div#collapsable-nav {     
+        background-color: #b8b8b8;
+        border: 1px;
+    }
+  }
+  
+  /********** Medium devices only **********/
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* Header */
+    nav div#collapsable-nav {     
+        background-color: #b8b8b8;
+    }
+    /* End Header */
+  }
+  
+  /********** Small devices only **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    nav div#collapsable-nav {     
+        background-color: #b8b8b8;
+  }
+}
